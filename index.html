@@ -8,17 +8,35 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body id="inicio">
+<body id="inicio" class="index">
     <nav class="site-nav">
         <a href="index.html" class="ativo">Star Wars - A História</a>
         <a href="linha_do_tempo.html">Linha do Tempo</a>
     </nav>
 
+    <div class="sw-player">
+      <button id="play-pause" class="sw-btn">▶</button>
+      <div class="sw-track-info">
+      <span id="track-title">Star Wars Intro Theme</span>
+      <div class="sw-progress-bar">
+      <div id="progress" class="sw-progress"></div>
+      </div>
+      </div>
+      <span id="current-time">0:00</span> / <span id="duration">0:00</span>
+    </div>
+
+    <audio id="audio" autoplay muted loop>
+        <source src="audio/Star_Wars_Intro_HD_1080p.mp3" type="audio/mpeg">
+        <source src="audio/Star_Wars_Intro_HD_1080p.wav" type="audio/wav">
+        <source src="audio/Star_Wars_Intro_HD_1080p.ogg" type="audio/ogg">
+        Seu navegador não suporta o player de áudio.
+      </audio>
+
     <section id="conteudo-index">
         <div id="cards">
 
             <div class="card1">
-                <h1 class="titulo-index">Visão Geral</h1>
+                <h1 class="titulo-index" id="inicio">Visão Geral</h1>
                 <p class="descricao-index">A saga Guerra Nas Estrelas transcende sua indentidade como simples "ficção
                     científica" para se tornar um estudo mitplógico sobre poder, moralidade e a condição humana. Em seu
                     núcleo, a saga explora a <span class="destaque">diaética eterna entre ordem e liberdade</span>, questionando
@@ -92,7 +110,7 @@
             </div>
 
             <div class="card5">
-                <h1 class="titulo-index">Política como Pano de Fundo Essencial</h1>
+                <h1 class="titulo-index" id="meio">Política como Pano de Fundo Essencial</h1>
 
                 <h2 class="subtitulo-index">Não é Space Opera, é Política Espacial</h2>
                 <p class="descricao-index">Star Wars sempre foi fundamentalmente sobre sistemas políticos:
@@ -171,7 +189,7 @@
             </div>
 
             <div class="card9">
-                <h1 class="titulo-index">O que Star Wars nos Ensina sobre Nós Mesmos</h1>
+                <h1 class="titulo-index" id="fim">O que Star Wars nos Ensina sobre Nós Mesmos</h1>
 
                 <h2 class="subtitulo-index">O Poder do Mythos</h2>
                 <p class="descricao-index">Star Wars prova que <span class="destaque">sociedades precisam de mitos compartilhados.</span>Em uma era fragmentada, a saga oferece linguagem comum para discutir temas universais.</p>
@@ -229,17 +247,19 @@
 
             <p>© 2025 Análise cronológica da Saga Guerra nas Estrelas (Star Wars). Todos os direitos sobre as obras
                 referenciadas pertence aos seus respectivos criadores originais.</p>
-            <p>Esse é um site feito por um fã sem objetivos comerciais e desenvolvido como trabalho de conclusão da
-                disciplina Desenvolvimento Web.</p>
+            <p><span>Aviso Legal: </span>Este é um site<span> NÃO OFICIAL </span>criado para fins educativos. <br> Todos os
+            elementos, filmes, séries e personagens são marcas registradas de seus respectivos detentores. <br> Esse
+            projeto não possui afiliação, endosso ou autorização da LucasFilm Ltda. ou da The Walt Disney Company.</p>
 
             <nav class="footer-nav">
                 <a href="#inicio">Volte para o início</a>
-                <a href="#disclaimer">Aviso Legal.</a>
+                <a href="#fim">Conclusão</a>
             </nav>
 
         </div>
     </footer>
     <script src="./scripts/footer.js"></script>
+    <script src="./scripts/audio.js"></script>
 
 </body>
 

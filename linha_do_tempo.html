@@ -14,6 +14,24 @@
         <a href="linha_do_tempo.html" class="ativo">Linha do Tempo</a>
     </nav>
 
+    <div class="sw-player">
+      <button id="play-pause" class="sw-btn">▶</button>
+      <div class="sw-track-info">
+      <span id="track-title">Star Wars Intro Theme</span>
+      <div class="sw-progress-bar">
+      <div id="progress" class="sw-progress"></div>
+      </div>
+      </div>
+      <span id="current-time">0:00</span> / <span id="duration">0:00</span>
+    </div>
+
+    <audio id="audio" autoplay muted loop>
+        <source src="audio/Star_Wars_Intro_HD_1080p.mp3" type="audio/mpeg">
+        <source src="audio/Star_Wars_Intro_HD_1080p.wav" type="audio/wav">
+        <source src="audio/Star_Wars_Intro_HD_1080p.ogg" type="audio/ogg">
+        Seu navegador não suporta o player de áudio.
+      </audio>
+
     <div id="disclaimer">
         <h1><span>Aviso Legal: </span>Este é um site<span> NÃO OFICIAL </span>criado para fins educativos. <br> Todos os
             elementos, filmes, séries e personagens são marcas registradas de seus respectivos detentores. <br> Esse
@@ -29,15 +47,16 @@
             <div class="era-col alvorecer">
                 <h2 class="era-titulo">Alvorecer dos Jedi (Dawn of The Jedi)</h2>
                 <div class="sabre-alvorecer"></div>
+                <img src="./assets/eras/era1_DawnOfTheJedi.png" alt="Logo Dawn Of The Jedi">
                 <div class="card">
                     <h3>Origens da Força</h3>
                     <p class="ano">~ 25.000 BBY</p>
-                    <p class="tema">Tema: A origem da Ordem Jedi e a primeira compreensão da Força.</p>
-                    <p class="angulo">Ângulo: Foco em civilizações antigas e nos primeiros praticantes da Força, antes
+                    <p class="tema"><span class="destaque">Tema</span>: A origem da Ordem Jedi e a primeira compreensão da Força.</p>
+                    <p class="angulo"><span class="destaque">Ângulo</span>: Foco em civilizações antigas e nos primeiros praticantes da Força, antes
                         da divisão entre luz e trevas e do uso de sabres de luz.</p>
-                    <p class="observacao">Observação: Explora a relação inicial e crua com a Força e os primeiros
+                    <p class="observacao"><span class="destaque">Observação</span>: Explora a relação inicial e crua com a Força e os primeiros
                         conflitos que levaram à formalização da Ordem Jedi.</p>
-                    <p class="discussao">Discussão: A natureza dos usuários originais da Força e os primeiros grandes
+                    <p class="discussao"><span class="destaque">Discussão</span>: A natureza dos usuários originais da Força e os primeiros grandes
                         conflitos que definiram a filosofia Jedi.</p>
                 </div>
             </div>
@@ -45,16 +64,17 @@
             <div class="era-col velha">
                 <h2 class="era-titulo">A Velha República (The Old Republic)</h2>
                 <div class="sabre-velha"></div>
+                <img src="./assets/eras/era2_TheOldRepublic.png" alt="Logo The Old Republic">
                 <div class="card">
                     <h3>Grandes Guerras Sith</h3>
                     <p class="ano">~ 5.000 BBY</p>
-                    <p class="tema">Tema: Um período turbulento de milhares de anos de governo galáctico e grandes
+                    <p class="tema"><span class="destaque">Tema</span>: Um período turbulento de milhares de anos de governo galáctico e grandes
                         guerras Jedi-Sith.</p>
-                    <p class="angulo">Ângulo: Narrativa rica e expansiva, focada em conflitos de larga escala, expansão
+                    <p class="angulo"><span class="destaque">Ângulo</span>: Narrativa rica e expansiva, focada em conflitos de larga escala, expansão
                         da República e a complexa estrutura política.</p>
-                    <p class="observacao">Observação: Caracterizada pela luta constante entre as duas grandes ordens,
+                    <p class="observacao"><span class="destaque">Observação</span>: Caracterizada pela luta constante entre as duas grandes ordens,
                         definindo a história política e militar da galáxia.</p>
-                    <p class="discussao">Discussão: A riqueza narrativa (especialmente em Legends) e o conflito eterno
+                    <p class="discussao"><span class="destaque">Discussão</span>: A riqueza narrativa e o conflito eterno
                         entre Jedi e Sith.</p>
                 </div>
             </div>
@@ -62,15 +82,16 @@
             <div class="era-col alta">
                 <h2 class="era-titulo">A Alta República (The High Republic)</h2>
                 <div class="sabre-alta"></div>
+                <img src="./assets/eras/era3_TheHighRepublic.png" alt="Logo The High Republic">
                 <div class="card">
                     <h3>O Acólito (The Acolyte)</h3>
                     <p class="ano">~ 132 BBY</p>
-                    <p class="tema">Tema: A ascensão do Lado Sombrio e a corrupção da Ordem Jedi.</p>
-                    <p class="angulo">Ângulo: Um mistério de assassinato que se aprofunda na filosofia do Lado Sombrio,
+                    <p class="tema"><span class="destaque">Tema</span>: A ascensão do Lado Sombrio e a corrupção da Ordem Jedi.</p>
+                    <p class="angulo"><span class="destaque">Ângulo</span>: Um mistério de assassinato que se aprofunda na filosofia do Lado Sombrio,
                         focado em personagens fora das estruturas tradicionais de poder.</p>
-                    <p class="observacao">Observação: Explora um período de paz complacente da Ordem Jedi,
+                    <p class="observacao"><span class="destaque">Observação</span>: Explora um período de paz complacente da Ordem Jedi,
                         contrastando-o com a ameaça Sith oculta. A dualidade e o parentesco são centrais.</p>
-                    <p class="discussao">Discussão: A validade da Regra de Dois e a complacência da Ordem Jedi em
+                    <p class="discussao"><span class="destaque">Discussão</span>: A validade da Regra de Dois e a complacência da Ordem Jedi em
                         reconhecer ameaças internas.</p>
                 </div>
             </div>
@@ -78,41 +99,42 @@
             <div class="era-col queda">
                 <h2 class="era-titulo">A Queda dos Jedi (Fall of the Jedi)</h2>
                 <div class="sabre-queda"></div>
+                <img src="./assets/eras/era4_FallOfTheJedi.png" alt="Logo Fall Of The Jedi">
                 <div class="card">
                     <h3>Lendas dos Jedi (Tales of The Jedi)</h3>
                     <p class="ano">~ 100 - 19 BBY</p>
-                    <p class="tema">Tema: Momentos cruciais na vida de Jedi icônicos e as escolhas que definem o
+                    <p class="tema"><span class="destaque">Tema</span>: Momentos cruciais na vida de Jedi icônicos e as escolhas que definem o
                         destino.</p>
-                    <p class="angulo">Ângulo: Antologia animada que oferece vislumbres íntimos do passado de Ahsoka Tano
+                    <p class="angulo"><span class="destaque">Ângulo</span>: Antologia animada que oferece vislumbres íntimos do passado de Ahsoka Tano
                         e Conde Dookan, preenchendo lacunas narrativas.</p>
-                    <p class="observacao">Observação: Essencial para entender a progressão de Dookan de Mestre Jedi a
+                    <p class="observacao"><span class="destaque">Observação</span>: Essencial para entender a progressão de Dookan de Mestre Jedi a
                         Lorde Sith e a infância de Ahsoka. É um estudo de personagem conciso.</p>
-                    <p class="discussao">Discussão: A falibilidade da Ordem Jedi e como o dogmatismo contribuiu para a
+                    <p class="discussao"><span class="destaque">Discussão</span>: A falibilidade da Ordem Jedi e como o dogmatismo contribuiu para a
                         queda de figuras como Dookan.</p>
                 </div>
 
                 <div class="card">
                     <h3>Ameaça Fantasma - Episódio 1 (Episode I - The Phantom Menace)</h3>
                     <p class="ano">32 BBY</p>
-                    <p class="tema">Tema: O início da queda da República e a introdução da ameaça Sith.</p>
-                    <p class="angulo">Ângulo: A perspectiva de Qui-Gon Jinn e Obi-Wan Kenobi e a descoberta de Anakin
+                    <p class="tema"><span class="destaque">Tema</span>: O início da queda da República e a introdução da ameaça Sith.</p>
+                    <p class="angulo"><span class="destaque">Ângulo</span>: A perspectiva de Qui-Gon Jinn e Obi-Wan Kenobi e a descoberta de Anakin
                         Skywalker como o "Escolhido".</p>
-                    <p class="observacao">Observação: Estabelece o cenário político de corrupção e burocracia que
+                    <p class="observacao"><span class="destaque">Observação</span>: Estabelece o cenário político de corrupção e burocracia que
                         Palpatine explorará, introduzindo a profecia do Escolhido.</p>
-                    <p class="discussao">Discussão: A profecia do Escolhido e a eficácia da Ordem Jedi em reconhecer a
+                    <p class="discussao"><span class="destaque">Discussão</span>: A profecia do Escolhido e a eficácia da Ordem Jedi em reconhecer a
                         ameaça Sith.</p>
                 </div>
 
                 <div class="card">
                     <h3>Ataque dos Clones - Episódio 2 (Episode II - Attack of The Clones)</h3>
                     <p class="ano">22 BBY</p>
-                    <p class="tema">Tema: O prelúdio da guerra e o romance proibido.</p>
-                    <p class="angulo">Ângulo: O desenvolvimento do relacionamento de Anakin e Padmé em meio à crise
+                    <p class="tema"><span class="destaque">Tema</span>: O prelúdio da guerra e o romance proibido.</p>
+                    <p class="angulo"><span class="destaque">Ângulo</span>: O desenvolvimento do relacionamento de Anakin e Padmé em meio à crise
                         política e a investigação de Obi-Wan sobre o exército de clones.</p>
-                    <p class="observacao">Observação: Explora temas de autoritarismo e populismo, com Palpatine
+                    <p class="observacao"><span class="destaque">Observação</span>: Explora temas de autoritarismo e populismo, com Palpatine
                         manipulando o Senado para obter poderes de emergência.
                     </p>
-                    <p class="discussao">Discussão: A ironia trágica da Ordem Jedi aceitar um exército criado por seus
+                    <p class="discussao"><span class="destaque">Discussão</span>: A ironia trágica da Ordem Jedi aceitar um exército criado por seus
                         inimigos e a erosão da democracia em nome da segurança.
                     </p>
                 </div>
@@ -120,26 +142,26 @@
                 <div class="card">
                     <h3>A Batalha dos Clones (The Clone Wars)</h3>
                     <p class="ano">22 - 19 BBY</p>
-                    <p class="tema">Tema: A guerra em si, a desumanização do conflito e o desenvolvimento de
+                    <p class="tema"><span class="destaque">Tema</span>: A guerra em si, a desumanização do conflito e o desenvolvimento de
                         personagens.</p>
-                    <p class="angulo">Ângulo: Visão expandida das Guerras Clônicas, mostrando a brutalidade da guerra e
+                    <p class="angulo"><span class="destaque">Ângulo</span>: Visão expandida das Guerras Clônicas, mostrando a brutalidade da guerra e
                         a complexidade moral dos clones.</p>
-                    <p class="observacao">Observação: Elogiada por dar profundidade e humanidade aos Clones,
+                    <p class="observacao"><span class="destaque">Observação</span>: Elogiada por dar profundidade e humanidade aos Clones,
                         transformando-os em indivíduos com personalidades distintas.</p>
-                    <p class="discussao">Discussão: A moralidade da guerra e o papel dos Jedi como generais. A saída de
+                    <p class="discussao"><span class="destaque">Discussão</span>: A moralidade da guerra e o papel dos Jedi como generais. A saída de
                         Ahsoka da Ordem Jedi.</p>
                 </div>
 
                 <div class="card">
                     <h3>Vingança dos Sith - Episódio 3 (Episode III - Revenge of The Sith)</h3>
                     <p class="ano">19 BBY</p>
-                    <p class="tema">Tema: A tragédia da queda de Anakin Skywalker e o nascimento do Império Galáctico.
+                    <p class="tema"><span class="destaque">Tema</span>: A tragédia da queda de Anakin Skywalker e o nascimento do Império Galáctico.
                     </p>
-                    <p class="angulo">Ângulo: Uma tragédia shakespeariana, focando na dor, no medo e na manipulação que
+                    <p class="angulo"><span class="destaque">Ângulo</span>: Uma tragédia shakespeariana, focando na dor, no medo e na manipulação que
                         levam Anakin à traição e à Ordem 66.</p>
-                    <p class="observacao">Observação: O ponto de inflexão da saga, onde a esperança morre e o mal
+                    <p class="observacao"><span class="destaque">Observação</span>: O ponto de inflexão da saga, onde a esperança morre e o mal
                         triunfa. Intensifica o drama da traição e da destruição da Ordem Jedi.</p>
-                    <p class="discussao">Discussão: O fracasso da Ordem Jedi em salvar Anakin e a natureza destrutiva do
+                    <p class="discussao"><span class="destaque">Discussão</span>: O fracasso da Ordem Jedi em salvar Anakin e a natureza destrutiva do
                         apego e do medo da perda.</p>
                 </div>
             </div>
@@ -147,65 +169,66 @@
             <div class="era-col imperio">
                 <h2 class="era-titulo">O Reinado do Império (Reign of the Empire)</h2>
                 <div class="sabre-imperio"></div>
+                <img src="./assets/eras/era5_ReignOfTheEmpire.png" alt="Logo Reign Of The Empire">
                 <div class="card">
                     <h3>O Lote Ruim (The Bad Batch)</h3>
                     <p class="ano"> 19 BBY</p>
-                    <p class="tema">Tema: A transição da República para o Império e o destino dos Clones.</p>
-                    <p class="angulo">Ângulo: A perspectiva de um esquadrão de clones geneticamente modificados que
+                    <p class="tema"><span class="destaque">Tema</span>: A transição da República para o Império e o destino dos Clones.</p>
+                    <p class="angulo"><span class="destaque">Ângulo</span>: A perspectiva de um esquadrão de clones geneticamente modificados que
                         resistem à Ordem 66 e se tornam mercenários.</p>
-                    <p class="observacao">Observação: Detalha o processo de substituição dos Clones por Stormtroopers,
+                    <p class="observacao"><span class="destaque">Observação</span>: Detalha o processo de substituição dos Clones por Stormtroopers,
                         marcando o fim de uma era e o início da consolidação imperial.</p>
-                    <p class="discussao">Discussão: A identidade e humanidade dos Clones e a natureza da lealdade em um
+                    <p class="discussao"><span class="destaque">Discussão</span>: A identidade e humanidade dos Clones e a natureza da lealdade em um
                         regime em mudança.</p>
                 </div>
 
                 <div class="card">
                     <h3>Han Solo: Uma História Star Wars (Han Solo)</h3>
                     <p class="ano"> 10 BBY</p>
-                    <p class="tema">Tema: A origem do anti-herói e a formação de laços de lealdade no submundo galáctico
+                    <p class="tema"><span class="destaque">Tema</span>: A origem do anti-herói e a formação de laços de lealdade no submundo galáctico
                     </p>
-                    <p class="angulo">Ângulo: Uma aventura de assalto e faroeste espacial que explora a juventude de Han
+                    <p class="angulo"><span class="destaque">Ângulo</span>: Uma aventura de assalto e faroeste espacial que explora a juventude de Han
                         Solo e seus primeiros encontros com Chewbacca e Lando.</p>
-                    <p class="observacao">Observação: Concentra-se em elementos de crime organizado e sobrevivência,
+                    <p class="observacao"><span class="destaque">Observação</span>: Concentra-se em elementos de crime organizado e sobrevivência,
                         distanciando-se dos temas da Força e dos Jedi.</p>
-                    <p class="discussao">Discussão: A necessidade de histórias de origem para personagens icônicos e
+                    <p class="discussao"><span class="destaque">Discussão</span>: A necessidade de histórias de origem para personagens icônicos e
                         como o filme se encaixa no cânone.</p>
                 </div>
 
                 <div class="card">
                     <h3>Obi-Wan Kenobi (Obi-Wan)</h3>
                     <p class="ano">~ 9 BBY</p>
-                    <p class="tema">Tema: O trauma, a culpa e a redenção de um herói exilado.</p>
-                    <p class="angulo">Ângulo: Um estudo de personagem sobre o luto e a responsabilidade, com Obi-Wan em
+                    <p class="tema"><span class="destaque">Tema</span>: O trauma, a culpa e a redenção de um herói exilado.</p>
+                    <p class="angulo"><span class="destaque">Ângulo</span>: Um estudo de personagem sobre o luto e a responsabilidade, com Obi-Wan em
                         reclusão e lutando para aceitar o que aconteceu com Anakin.</p>
-                    <p class="observacao">Observação: Aprofunda a dor de Vader e a luta de Obi-Wan para proteger os
+                    <p class="observacao"><span class="destaque">Observação</span>: Aprofunda a dor de Vader e a luta de Obi-Wan para proteger os
                         gêmeos Skywalker, ligando diretamente as trilogias.</p>
-                    <p class="discussao">Discussão: A recontextualização do relacionamento entre Obi-Wan e Vader e a
+                    <p class="discussao"><span class="destaque">Discussão</span>: A recontextualização do relacionamento entre Obi-Wan e Vader e a
                         justificativa para a narrativa de Uma Nova Esperança.</p>
                 </div>
 
                 <div class="card">
                     <h3>Os Rebeldes (Rebels)</h3>
                     <p class="ano">5 - 1 BBY</p>
-                    <p class="tema">Tema: O nascimento da Aliança Rebelde e a luta de um pequeno grupo contra a
+                    <p class="tema"><span class="destaque">Tema</span>: O nascimento da Aliança Rebelde e a luta de um pequeno grupo contra a
                         opressão.</p>
-                    <p class="angulo">Ângulo: Uma série animada que segue a tripulação da nave Ghost, mostrando a
+                    <p class="angulo"><span class="destaque">Ângulo</span>: Uma série animada que segue a tripulação da nave Ghost, mostrando a
                         evolução de células rebeldes isoladas para uma força unificada.</p>
-                    <p class="observacao">Observação: Crucial para aprofundar a mitologia da Força, introduzir o vilão
+                    <p class="observacao"><span class="destaque">Observação</span>: Crucial para aprofundar a mitologia da Força, introduzir o vilão
                         Grande Almirante Thrawn e estabelecer a base para a rebelião.</p>
-                    <p class="discussao">Discussão: A natureza da esperança e a importância da família (escolhida) na
+                    <p class="discussao"><span class="destaque">Discussão</span>: A natureza da esperança e a importância da família (escolhida) na
                         luta contra a tirania.</p>
                 </div>
 
                 <div class="card">
                     <h3>Andor: Uma História Star Wars (Andor)</h3>
                     <p class="ano">5 - 0 BBY</p>
-                    <p class="tema">Tema: O realismo político e a escalada da rebelião.</p>
-                    <p class="angulo">Ângulo: Abordagem de espionagem e thriller político que mostra a vida cotidiana
+                    <p class="tema"><span class="destaque">Tema</span>: O realismo político e a escalada da rebelião.</p>
+                    <p class="angulo"><span class="destaque">Ângulo</span>: Abordagem de espionagem e thriller político que mostra a vida cotidiana
                         sob o Império e a radicalização de indivíduos comuns.</p>
-                    <p class="observacao">Observação: Aclamada por sua maturidade, roteiro complexo e por ser um estudo
+                    <p class="observacao"><span class="destaque">Observação</span>: Aclamada por sua maturidade, roteiro complexo e por ser um estudo
                         sobre a burocracia do mal e a resistência organizada.</p>
-                    <p class="discussao">Discussão: O tom sombrio e realista da série e a necessidade de sacrifícios
+                    <p class="discussao"><span class="destaque">Discussão</span>: O tom sombrio e realista da série e a necessidade de sacrifícios
                         morais para alcançar um bem maior.</p>
                 </div>
             </div>
@@ -213,51 +236,52 @@
             <div class="era-col rebeliao">
                 <h2 class="era-titulo">A Era da Rebelião (Age of Rebellion)</h2>
                 <div class="sabre-rebeliao"></div>
+                <img src="./assets/eras/era6_Age of Rebellion.png" alt="Logo Age Of Rebellion">
                 <div class="card">
                     <h3>Rogue One: Uma História Star Wars (Rogue One)</h3>
                     <p class="ano"> 0 ABY</p>
-                    <p class="tema">Tema: Sacrifício e a origem da esperança.</p>
-                    <p class="angulo">Ângulo: Uma missão de guerra que detalha os esforços desesperados de um esquadrão
+                    <p class="tema"><span class="destaque">Tema</span>: Sacrifício e a origem da esperança.</p>
+                    <p class="angulo"><span class="destaque">Ângulo</span>: Uma missão de guerra que detalha os esforços desesperados de um esquadrão
                         de rebeldes para roubar os planos da Estrela da Morte.</p>
-                    <p class="observacao">Observação: Notável por seu final trágico e por preencher a lacuna narrativa
+                    <p class="observacao"><span class="destaque">Observação</span>: Notável por seu final trágico e por preencher a lacuna narrativa
                         sobre como a Aliança Rebelde obteve os planos da superarma.</p>
-                    <p class="discussao">Discussão: A importância do sacrifício e o heroísmo dos "homens e mulheres
+                    <p class="discussao"><span class="destaque">Discussão</span>: A importância do sacrifício e o heroísmo dos "homens e mulheres
                         comuns" que lutam contra o Império.</p>
                 </div>
 
                 <div class="card">
                     <h3>Uma Nova Esperança - Episódio 4 (Episode IV – A New Hope)</h3>
                     <p class="ano">0 ABY</p>
-                    <p class="tema">Tema: O despertar do herói e a luta clássica do bem contra o mal.</p>
-                    <p class="angulo">Ângulo: Uma jornada do herói arquetípica, seguindo Luke Skywalker de um fazendeiro
+                    <p class="tema"><span class="destaque">Tema</span>: O despertar do herói e a luta clássica do bem contra o mal.</p>
+                    <p class="angulo"><span class="destaque">Ângulo</span>: Uma jornada do herói arquetípica, seguindo Luke Skywalker de um fazendeiro
                         a um herói galáctico.</p>
-                    <p class="observacao">Observação: Estabelece a base da mitologia de Star Wars, com seus temas de
+                    <p class="observacao"><span class="destaque">Observação</span>: Estabelece a base da mitologia de Star Wars, com seus temas de
                         destino, magia (a Força) e tecnologia (o Império).</p>
-                    <p class="discussao">Discussão: A simplicidade e eficácia da narrativa clássica de fantasia e a
+                    <p class="discussao"><span class="destaque">Discussão</span>: A simplicidade e eficácia da narrativa clássica de fantasia e a
                         introdução de personagens que se tornaram ícones culturais.</p>
                 </div>
 
                 <div class="card">
                     <h3>O Império Contra Ataca - Episódio 5 (Episode V – The Empire Strikes Back)</h3>
                     <p class="ano">3 ABY</p>
-                    <p class="tema">Tema: A escuridão, a derrota e a revelação.</p>
-                    <p class="angulo">Ângulo: Um drama psicológico que separa os heróis, aprofundando o treinamento de
+                    <p class="tema"><span class="destaque">Tema</span>: A escuridão, a derrota e a revelação.</p>
+                    <p class="angulo"><span class="destaque">Ângulo</span>: Um drama psicológico que separa os heróis, aprofundando o treinamento de
                         Luke e revelando a chocante verdade sobre sua paternidade.</p>
-                    <p class="observacao">Observação: Amplamente considerado o melhor da saga por seu tom maduro,
+                    <p class="observacao"><span class="destaque">Observação</span>: Amplamente considerado o melhor da saga por seu tom maduro,
                         complexidade emocional e a reviravolta icônica.</p>
-                    <p class="discussao">Discussão: A importância da revelação "Eu sou seu pai" e a forma como o filme
+                    <p class="discussao"><span class="destaque">Discussão</span>: A importância da revelação "Eu sou seu pai" e a forma como o filme
                         lida com o tema da derrota e da esperança em meio ao desespero.</p>
                 </div>
 
                 <div class="card">
                     <h3>O Retorno do Jedi - Episódio 6 (Episode VI – Return of the Jedi)</h3>
                     <p class="ano">4 ABY</p>
-                    <p class="tema">Tema: Redenção, sacrifício e o triunfo da esperança.</p>
-                    <p class="angulo">Ângulo: A conclusão da jornada de Luke, que se recusa a matar seu pai e, em vez
+                    <p class="tema"><span class="destaque">Tema</span>: Redenção, sacrifício e o triunfo da esperança.</p>
+                    <p class="angulo"><span class="destaque">Ângulo</span>: A conclusão da jornada de Luke, que se recusa a matar seu pai e, em vez
                         disso, o redime, cumprindo a profecia do Escolhido.</p>
-                    <p class="observacao">Observação: Notável por equilibrar a ação épica com o drama íntimo (o
+                    <p class="observacao"><span class="destaque">Observação</span>: Notável por equilibrar a ação épica com o drama íntimo (o
                         confronto entre Luke, Vader e Palpatine).</p>
-                    <p class="discussao">Discussão: A redenção de Darth Vader e o significado do "Retorno do Jedi" (se
+                    <p class="discussao"><span class="destaque">Discussão</span>: A redenção de Darth Vader e o significado do "Retorno do Jedi" (se
                         refere a Anakin ou Luke).</p>
                 </div>
             </div>
@@ -265,52 +289,53 @@
             <div class="era-col nova">
                 <h2 class="era-titulo">A Nova República (The New Republic)</h2>
                 <div class="sabre-nova"></div>
+                <img src="./assets/eras/era7_The New Republic.png" alt="Logo The New Republic">
                 <div class="card">
                     <h3>O Mandaloriano (The Mandalorian)</h3>
                     <p class="ano"> 9 ABY</p>
-                    <p class="tema">Tema: Paternidade, dever e a redefinição do que significa ser um Mandaloriano.</p>
-                    <p class="angulo">Ângulo: Um faroeste espacial que segue Din Djarin e sua relação com Grogu,
+                    <p class="tema"><span class="destaque">Tema</span>: Paternidade, dever e a redefinição do que significa ser um Mandaloriano.</p>
+                    <p class="angulo"><span class="destaque">Ângulo</span>: Um faroeste espacial que segue Din Djarin e sua relação com Grogu,
                         explorando a cultura Mandaloriana e o vácuo de poder pós-Império.</p>
-                    <p class="observacao">Observação: Sucesso por seu formato serializado e por reintroduzir elementos
+                    <p class="observacao"><span class="destaque">Observação</span>: Sucesso por seu formato serializado e por reintroduzir elementos
                         do Velho Oeste no universo Star Wars.</p>
-                    <p class="discussao">Discussão: A natureza do credo Mandaloriano e a exploração do período da Nova
+                    <p class="discussao"><span class="destaque">Discussão</span>: A natureza do credo Mandaloriano e a exploração do período da Nova
                         República, mostrando um ambiente sem lei.</p>
                 </div>
 
                 <div class="card">
                     <h3>O Livro de Boba Fett (The Book of Boba Fett)</h3>
                     <p class="ano">9 ABY</p>
-                    <p class="tema">Tema: Poder, respeito e a transição de caçador de recompensas para lorde do crime.
+                    <p class="tema"><span class="destaque">Tema</span>: Poder, respeito e a transição de caçador de recompensas para lorde do crime.
                     </p>
-                    <p class="angulo">Ângulo: Uma série que segue Boba Fett e Fennec Shand enquanto tentam assumir o
+                    <p class="angulo"><span class="destaque">Ângulo</span>: Uma série que segue Boba Fett e Fennec Shand enquanto tentam assumir o
                         controle do submundo do crime em Tatooine.</p>
-                    <p class="observacao">Observação: Explora a sobrevivência de Boba Fett e expande a história dos
+                    <p class="observacao"><span class="destaque">Observação</span>: Explora a sobrevivência de Boba Fett e expande a história dos
                         Tusken Raiders, dando-lhes mais profundidade cultural.</p>
-                    <p class="discussao">Discussão: A eficácia da transição de Boba Fett para um líder mais político e a
+                    <p class="discussao"><span class="destaque">Discussão</span>: A eficácia da transição de Boba Fett para um líder mais político e a
                         inclusão de elementos de The Mandalorian.</p>
                 </div>
 
                 <div class="card">
                     <h3>Ahsoka</h3>
                     <p class="ano">~ 11 ABY</p>
-                    <p class="tema">Tema: A busca por um novo lar e a ameaça do Grande Almirante Thrawn.</p>
-                    <p class="angulo">Ângulo: Uma aventura que se concentra em Ahsoka Tano e sua busca por Ezra Bridger
+                    <p class="tema"><span class="destaque">Tema</span>: A busca por um novo lar e a ameaça do Grande Almirante Thrawn.</p>
+                    <p class="angulo"><span class="destaque">Ângulo</span>: Uma aventura que se concentra em Ahsoka Tano e sua busca por Ezra Bridger
                         e o retorno de Thrawn, explorando o conceito de outras galáxias.</p>
-                    <p class="observacao">Observação: Crucial para a narrativa da Nova República, estabelecendo Thrawn
+                    <p class="observacao"><span class="destaque">Observação</span>: Crucial para a narrativa da Nova República, estabelecendo Thrawn
                         como o herdeiro do Império e a principal ameaça à paz.</p>
-                    <p class="discussao">Discussão: A relação mestre-aprendiz entre Ahsoka e Sabine Wren e a expansão do
+                    <p class="discussao"><span class="destaque">Discussão</span>: A relação mestre-aprendiz entre Ahsoka e Sabine Wren e a expansão do
                         universo para além da galáxia conhecida.</p>
                 </div>
 
                 <div class="card">
                     <h3>A Tripulação Skeleton (Skeleton Crew)</h3>
                     <p class="ano">~ 11 ABY</p>
-                    <p class="tema">Tema: A inocência perdida e a aventura em uma galáxia perigosa.</p>
-                    <p class="angulo">Ângulo: Uma história de amadurecimento (coming-of-age) que segue um grupo de
+                    <p class="tema"><span class="destaque">Tema</span>: A inocência perdida e a aventura em uma galáxia perigosa.</p>
+                    <p class="angulo"><span class="destaque">Ângulo</span>: Uma história de amadurecimento (coming-of-age) que segue um grupo de
                         crianças perdidas na galáxia, com um tom de aventura dos anos 80.</p>
-                    <p class="observacao">Observação:Promete um ângulo mais leve e focado em crianças, contrastando com
+                    <p class="observacao"><span class="destaque">Observação</span>:Promete um ângulo mais leve e focado em crianças, contrastando com
                         o tom mais sombrio de outras produções. </p>
-                    <p class="discussao">Discussão: Como uma série focada em crianças se encaixará no universo Star Wars
+                    <p class="discussao"><span class="destaque">Discussão</span>: Como uma série focada em crianças se encaixará no universo Star Wars
                         e a participação de Jude Law.</p>
                 </div>
             </div>
@@ -318,52 +343,53 @@
             <div class="era-col primeiraordem">
                 <h2 class="era-titulo">A Ascensão da Primeira Ordem (Rise of the First Order)</h2>
                 <div class="sabre-primeira"></div>
+                <img src="./assets/eras/era8_Rise of the First Order.png" alt="Logo Rise Of The First Order">
                 <div class="card">
                     <h3>A Resistência (Resistance)</h3>
                     <p class="ano"> ~ 34 - 35 ABY</p>
-                    <p class="tema">Tema: O prelúdio da guerra entre a Resistência e a Primeira Ordem.</p>
-                    <p class="angulo">Ângulo: Uma série animada que segue Kazuda Xiono, um jovem piloto espião da
+                    <p class="tema"><span class="destaque">Tema</span>: O prelúdio da guerra entre a Resistência e a Primeira Ordem.</p>
+                    <p class="angulo"><span class="destaque">Ângulo</span>: Uma série animada que segue Kazuda Xiono, um jovem piloto espião da
                         Resistência, mostrando a ascensão da Primeira Ordem.</p>
-                    <p class="observacao">Observação: Importante para preencher a lacuna entre O Retorno do Jedi e a
+                    <p class="observacao"><span class="destaque">Observação</span>: Importante para preencher a lacuna entre O Retorno do Jedi e a
                         trilogia sequela, mostrando a formação da Primeira Ordem nas sombras.</p>
-                    <p class="discussao">Discussão: O estilo de animação e a forma como a série lida com a política e a
+                    <p class="discussao"><span class="destaque">Discussão</span>: O estilo de animação e a forma como a série lida com a política e a
                         espionagem na Nova República.</p>
                 </div>
 
                 <div class="card">
                     <h3>O Despertar da Força - Episódio 7 (Episode VII – The Force Awakens)</h3>
                     <p class="ano">34 ABY</p>
-                    <p class="tema">Tema: O renascimento do conflito e a busca por um novo herói.</p>
-                    <p class="angulo">Ângulo: Uma narrativa que espelha Uma Nova Esperança, introduzindo novos heróis
+                    <p class="tema"><span class="destaque">Tema</span>: O renascimento do conflito e a busca por um novo herói.</p>
+                    <p class="angulo"><span class="destaque">Ângulo</span>: Uma narrativa que espelha Uma Nova Esperança, introduzindo novos heróis
                         (Rey, Finn, Poe) e vilões.</p>
-                    <p class="observacao">Observação: Notável por seu ritmo acelerado e por estabelecer uma nova geração
+                    <p class="observacao"><span class="destaque">Observação</span>: Notável por seu ritmo acelerado e por estabelecer uma nova geração
                         de personagens, lidando com o legado da trilogia original.</p>
-                    <p class="discussao">Discussão: A similaridade estrutural com Uma Nova Esperança e a introdução de
+                    <p class="discussao"><span class="destaque">Discussão</span>: A similaridade estrutural com Uma Nova Esperança e a introdução de
                         Rey como a nova protagonista sensível à Força..</p>
                 </div>
 
                 <div class="card">
                     <h3>O Último Jedi - Episódio 8 (Episode VIII – The Last Jedi)</h3>
                     <p class="ano">34 ABY</p>
-                    <p class="tema">Tema: Fracasso, legado e a necessidade de deixar o passado morrer.</p>
-                    <p class="angulo">Ângulo: Uma desconstrução da mitologia de Star Wars, com Luke Skywalker desiludido
+                    <p class="tema"><span class="destaque">Tema</span>: Fracasso, legado e a necessidade de deixar o passado morrer.</p>
+                    <p class="angulo"><span class="destaque">Ângulo</span>: Uma desconstrução da mitologia de Star Wars, com Luke Skywalker desiludido
                         e a exploração da ideia de que a Força não pertence apenas aos Jedi e Sith.</p>
-                    <p class="observacao">Observação: Notável por suas escolhas narrativas ousadas e por desafiar as
+                    <p class="observacao"><span class="destaque">Observação</span>: Notável por suas escolhas narrativas ousadas e por desafiar as
                         expectativas dos fãs sobre o que Star Wars deveria ser.</p>
-                    <p class="discussao">Discussão: A representação de Luke Skywalker e as mensagens sobre o fracasso e
+                    <p class="discussao"><span class="destaque">Discussão</span>: A representação de Luke Skywalker e as mensagens sobre o fracasso e
                         a quebra de tradições dentro da Força.</p>
                 </div>
 
                 <div class="card">
                     <h3>A Ascensão de Skywalker - Episódio 9 (Episode IX – The Rise of Skywalker)</h3>
                     <p class="ano">35 ABY</p>
-                    <p class="tema">Tema: O confronto final entre a luz e a escuridão e a conclusão da saga Skywalker.
+                    <p class="tema"><span class="destaque">Tema</span>: O confronto final entre a luz e a escuridão e a conclusão da saga Skywalker.
                     </p>
-                    <p class="angulo">Ângulo: Uma tentativa de amarrar todas as pontas soltas da trilogia sequela e da
+                    <p class="angulo"><span class="destaque">Ângulo</span>: Uma tentativa de amarrar todas as pontas soltas da trilogia sequela e da
                         saga como um todo, com o retorno de Palpatine.</p>
-                    <p class="observacao">Observação: Notável por seu ritmo frenético e por tentar reverter algumas das
+                    <p class="observacao"><span class="destaque">Observação</span>: Notável por seu ritmo frenético e por tentar reverter algumas das
                         decisões narrativas de Os Últimos Jedi.</p>
-                    <p class="discussao">Discussão: Uma tentativa de amarrar todas as pontas soltas da trilogia sequela
+                    <p class="discussao"><span class="destaque">Discussão</span>: Uma tentativa de amarrar todas as pontas soltas da trilogia sequela
                         e da saga como um todo, com o retorno de Palpatine.</p>
                 </div>
             </div>
@@ -371,15 +397,16 @@
             <div class="era-col ordemjedi">
                 <h2 class="era-titulo">Nova Ordem Jedi (New Jedi Order)</h2>
                 <div class="sabre-ordem"></div>
+                <img src="./assets/eras/era9_New Jedi Order.png" alt="Logo New Jedi Order">
                 <div class="card">
                     <h3>A Nova Ordem Jedi (New Jedi Order)</h3>
                     <p class="ano">~ 40 ABY</p>
-                    <p class="tema">Tema: A reconstrução da Ordem Jedi e o desafio de um novo começo.</p>
-                    <p class="angulo">Ângulo: Foco em Rey e seus esforços para re-estabelecer a Ordem, aprendendo com os
+                    <p class="tema"><span class="destaque">Tema</span>: A reconstrução da Ordem Jedi e o desafio de um novo começo.</p>
+                    <p class="angulo"><span class="destaque">Ângulo</span>: Foco em Rey e seus esforços para re-estabelecer a Ordem, aprendendo com os
                         erros do passado e treinando uma nova geração de Jedi.</p>
-                    <p class="observacao">Observação: Período de transição e reconstrução, onde a nova geração deve
+                    <p class="observacao"><span class="destaque">Observação</span>: Período de transição e reconstrução, onde a nova geração deve
                         definir o que a Ordem significa em uma galáxia pós-Sith.</p>
-                    <p class="discussao">Discussão: O legado da saga Skywalker e o desafio de reconstruir a Ordem Jedi
+                    <p class="discussao"><span class="destaque">Discussão</span>: O legado da saga Skywalker e o desafio de reconstruir a Ordem Jedi
                         sem repetir os erros dogmáticos do passado.</p>
                 </div>
             </div>
@@ -402,6 +429,8 @@
         </div>
     </footer>
     <script src="./scripts/footer.js"></script>
+    <script src="./scripts/audio.js"></script>
+
 </body>
 
 </html>
