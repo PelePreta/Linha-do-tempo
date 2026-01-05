@@ -4,7 +4,7 @@ Arquivo estático com uma linha do tempo cronológica comentada das principais s
 
 ## Visão geral
 
-Este projeto apresenta uma página principal (`index.html`) com uma linha do tempo horizontal contendo cards descritivos (ano, tema, ângulo e observações) para filmes e séries da saga. Também há uma página `sobre.html` com informações sobre o projeto e metodologia.
+Este projeto apresenta uma página principal com o resumo da Saga e outra com uma linha do tempo horizontal contendo cards descritivos (ano, tema, ângulo e observações) para filmes e séries da saga.
 
 O objetivo principal é apresentar conhecimentos de HTML, CSS e JavaScript básico em um trabalho educativo e sem fins comerciais.
 
@@ -12,7 +12,7 @@ O objetivo principal é apresentar conhecimentos de HTML, CSS e JavaScript bási
 
 Por ser um site estático, basta abrir os arquivos HTML no seu navegador. Passos recomendados:
 
-- Abrir `index.html` ou `sobre.html` no navegador (arrastar o arquivo para a janela do navegador ou usar "Abrir com").
+- Abrir `index.html` ou `linha_do_tempo.html` no navegador (arrastar o arquivo para a janela do navegador ou usar "Abrir com").
 - Para uma experiência mais próxima de um servidor (evita problemas com algumas fontes/loads), você pode rodar um servidor HTTP simples:
 
   - Com Python 3 instalado (no PowerShell):
@@ -27,8 +27,8 @@ Por ser um site estático, basta abrir os arquivos HTML no seu navegador. Passos
 
 - Raiz do projeto (apresenta apenas os arquivos principais):
 
-- `index.html` — Página principal com a linha do tempo.
-- `sobre.html` — Página com informações sobre o projeto e metodologia.
+- `index.html` — Página principal com o resumo da Saga Star Wars.
+- `linha_do_tempo.html` — Página com a linha do tempo.
 - `README.md` — Este arquivo.
 - `css/` — Pasta com o arquivo de estilos:
   - `style.css` — Estilos principais, fontes via @font-face, variáveis CSS e layout responsivo.
