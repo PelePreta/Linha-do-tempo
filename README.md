@@ -35,28 +35,22 @@ Por ser um site estático, basta abrir os arquivos HTML no seu navegador. Passos
 - `scripts/` — Scripts JavaScript:
   - `footer.js` — Funções simples para mostrar/esconder o rodapé.
 - `fonts/` — Fontes usadas pelo projeto (woff2).
-- `assets/` — Imagens (ex.: imagem de fundo usada no `style.css`).
+- `assets/` — Imagens usadas.
 
 ## Tecnologias
 
 - HTML5
-- CSS3 (Custom Properties, Flexbox)
-- JavaScript (vanilla)
+- CSS3
+- JavaScript
 
 ## Notas sobre conteúdo e licenças
 
 - O conteúdo referenciado (filmes, séries, personagens) pertence a seus respectivos detentores (LucasFilm Ltda., The Walt Disney Company, etc.). Este projeto é um trabalho de fã e educacional, sem fins comerciais.
 - As fontes e imagens incluídas devem ser usadas conforme suas licenças. Verifique a origem das fontes em `fonts/` e a imagem `assets/` antes de reutilizá-las em projetos comerciais.
 
-## Observações de desenvolvimento
-
-- O layout principal usa uma grade horizontal rolável (`.timeline-grid`) para acomodar eras/colunas.
-- Há customizações visuais (efeitos de luz, sabres) implementadas em CSS puro.
-- O rodapé é controlado pelo `scripts/footer.js` com duas funções simples: `mostrarFooter()` e `esconderFooter()`. Atualmente elas apenas alternam o estilo `display`. Sugestões: usar `aria-hidden`/transições e acrescentar controles de acessibilidade.
-
 ## Autor
 
-Desenvolvido por Stéfany — Trabalho final da disciplina Desenvolvimento Web (Instituto Federal). Projeto criado como fã e com fins educativos.
+Desenvolvido por Stéfany como Trabalho final da disciplina Desenvolvimento Web.
 
 
 ## Aviso legal

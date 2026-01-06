@@ -388,7 +388,6 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-
 }
 
 .card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8, .card9 {
@@ -609,7 +608,7 @@ img {
 
 #botao-footerMostrar {
     position: fixed;
-    top: 80px;
+    top: 30px;
     right: 10px;
     color: var(--branco);
     background: var(--amarelo-starwars);
@@ -660,32 +659,55 @@ img {
     color: var(--branco);
 }
 
+
+
 @media (max-width: 480px) {
+    body {
+        background-attachment: scroll;
+    }
+
+    .site-nav {
+        padding: 8px;
+        gap: 6px;
+        top: 5px;
+        left: 0;
+    }
+
+    .site-nav a {
+        padding: 6px 10px;
+        font-size: 0.85rem;
+    }
+
     #disclaimer {
         position: relative;
-        left: 90px;
-        width: 250px;
+        left: 25%;
+        width: 90%;
+        max-width: 250px;
+        top: 10px;
     }
+
     #titulo-principal {
         position: relative;
         top: 10px;
-        left: 100px;
+        left: 50%;
         font-size: 1.8rem;
-        margin-top: 12px;
+        margin: 12px auto;
+        width: 90%;
+        transform: translateX(-50%);
     }
 
     .card {
         padding: 14px;
-        font-size: 0.95rem;
+        font-size: 0.9rem;
     }
 
     .era-titulo {
-        font-size: 0.98rem;
+        font-size: 0.95rem;
         padding-left: 6px;
         text-align: left;
     }
 
-    .timeline-grid {
+    .timeline-grade {
         display: grid;
         grid-template-columns: 1fr;
         gap: 18px;
@@ -695,11 +717,11 @@ img {
         padding-left: 56px;
     }
 
-    .timeline-grid::before {
+    .timeline-grade::before {
         display: none;
     }
 
-    .timeline-grid::after {
+    .timeline-grade::after {
         content: "" !important;
         display: block;
         position: absolute;
@@ -736,10 +758,102 @@ img {
         text-align: left;
         padding: 14px;
         margin: 6px 0 16px 0;
-        box-shadow: none;
+        box-shadow: 0 0 10px var(--amarelo-starwars) inset;
         z-index: 2;
     }
+
+    .era-titulo {
+        align-self: center;
+        font-size: 1.2rem;
+    }
+
+    img {
+        align-self: center;
+    }
+
+    #cards {
+        padding: 10px;
+        gap: 15px;
+    }
+
+    .card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8, .card9 {
+        padding: 15px;
+        min-height: 300px;
+    }
+    
+    #conteudo-index {
+        padding: 20px 10px;
+    }
+
+    #formulario {
+        padding: 15px;
+        width: 95%;
+    }
+
+    #formulario input, #formulario textarea {
+        padding: 10px;
+    }
+
+    #botao {
+        width: 50%;
+        text-align: center;
+    }
+
+    #site-footer {
+        width: 95%;
+        bottom: 10px;
+        padding: 25px 12px;
+        font-size: 0.85rem;
+    }
+
     #footer-conteudoLinha {
-        width: 200px;
+        width: 100%;
+    }
+
+    #fotter-conteudoLinha a {
+        font-size: 0.85rem;
+    }
+
+    .footer-nav {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .footer-nav a {
+        display: block;
+        padding: 8px;
+    }
+
+    #botao-footerMostrar {
+        top: 60px;
+        right: 5px;
+        width: 30px;
+        height: 30px;
+    }
+
+    #botao-footer {
+        width: 22px;
+        height: 22px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .site-nav a {
+        font-size: 0.75rem;
+        padding: 5px 8px;
+    }
+    
+    #titulo-principal {
+        font-size: 1.2rem;
+    }
+
+    .card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8, .card9 {
+        padding: 12px;
+        min-height: 280px;
+    }
+
+    #site-footer {
+        padding: 20px 10px;
     }
 }
